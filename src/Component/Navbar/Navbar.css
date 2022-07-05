@@ -1,0 +1,158 @@
+.main-nav1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 54px;
+    border: none;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9;
+    /* padding: 0px 25px; */
+    /* padding-left: 150px; */
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5%;
+
+
+}
+
+.main-nav1 .blog-logo1 {
+    flex-basis: 30%;
+}
+
+.blog-logo1 img {
+    min-width: 120px;
+
+}
+
+.main-nav1 #menu1 {
+    margin-top: .5%;
+    flex-basis: 70%;
+
+    margin-right: 0px;
+}
+
+.nav-Link {
+    display: flex;
+}
+
+.socialheader a {
+    text-align: right;
+    font-size: 1.1em;
+    margin-left: 5px;
+
+
+}
+
+.nav-Link li a {
+    text-decoration: none;
+    font-size: 1em;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+    color: #ccc;
+
+    font-family: Playfair Display;
+    margin-right: 3rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-Link li a:hover {
+    color: white;
+}
+
+#menu1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.drop-down {
+    display: none;
+}
+
+.drop-down button {
+    margin-top: 3px;
+    color: #ccc;
+    border: 2px solid #ccc;
+    padding: 5px;
+    background-color: none;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10%;
+
+}
+
+
+@media only screen and (max-width:1015px) {
+    .nav-Link {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: block;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 100;
+        width: 50%;
+        height: 100%;
+        /* color: rgba(0, 0, 0, 0.8); */
+        background: content-box;
+        text-align: left;
+        padding: 5px;
+        position: relative;
+        top: 54px;
+        right: 0px;
+        left: 53%;
+        animation: mymove 1s;
+        animation-delay: 0s;
+    }
+
+    @keyframes mymove {
+        from {
+            top: 0px;
+        }
+
+        to {
+            bottom: 200px;
+        }
+    }
+
+    .manu1 .nav-responsive {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .nav-responsive li {
+        border-bottom: 2px solid black;
+        border-radius: 20px;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.8);
+        padding-left: 5px;
+    }
+
+    .nav-responsive li a {
+        color: black;
+        font-weight: 700;
+    }
+
+    .nav-responsive li a:hover {
+        color: white;
+
+    }
+
+    .socialheader a {
+        display: none;
+    }
+
+    .drop-down {
+        display: block;
+    }
+
+}
